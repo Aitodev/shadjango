@@ -1,0 +1,209 @@
+{% extends 'wrapper.html' %}
+{% load static %}
+{% block title %}ASTRA SOLUTIONS | CONTACT{% endblock %}
+{% block content %}
+<body>
+
+<div class="page-wrapper">
+    <!-- Preloader -->
+    <div class="loader-wrap">
+        <div class="preloader"><div class="preloader-close">Preloader Close</div></div>
+        <div class="layer layer-one"><span class="overlay"></span></div>
+        <div class="layer layer-two"><span class="overlay"></span></div>        
+        <div class="layer layer-three"><span class="overlay"></span></div>        
+    </div>
+
+    <!-- Main Header -->
+    {% include 'header.html' %}
+    <!-- End Main Header -->
+
+    <!-- Hidden Sidebar -->
+    <section class="hidden-sidebar close-sidebar">
+        <div class="wrapper-box">
+            <div class="hidden-sidebar-close"><span class="flaticon-remove"></span></div>
+            <div class="logo"><a href="contact-1.html#"><img src="{% static 'images/logo.png' %}" alt=""></a></div>
+            <div class="content">
+                <div class="about-widget-two sidebar-widget">
+                    <h3>Smart Business Consultancy <br>in New Milton</h3>
+                    <div class="text">We denounce with righteous indignation and dislike men who we are to beguiled demoralized by the charms of pleasures that moment, so we blinded desires, that they indignations.</div>
+                </div>
+                <!-- News Widget -->
+                <div class="news-widget sidebar-widget">
+                    <div class="widget-title">News & Updates</div>
+                    <div class="post-wrapper">
+                        <div class="image"><a href="blog-details.html"><img src="{% static 'images/resource/news-1.jpg' %}" alt=""></a></div>
+                        <div class="category">Business Plans</div>
+                        <h4><a href="blog-details.html">How to Manage Business’s <br>Online Reputation</a></h4>
+                    </div>
+                    <div class="post-wrapper">
+                        <div class="image"><a href="blog-details.html"><img src="{% static 'images/resource/news-2.jpg' %}" alt=""></a></div>
+                        <div class="category">Marketing Stratergy</div>
+                        <h4><a href="blog-details.html">Inside our Daily Routines as a <br>Good Consultant</a></h4>
+                    </div>
+                </div>
+                <!-- Newsletter Widget -->
+                <div class="newsletter-widget">
+                    <div class="widget-title">Newsletter Subscription</div>
+                    <form action="contact-1.html#">
+                        <input type="email" placeholder="Enter Email Address">
+                        <button class="theme-btn btn-style-one"><span class="btn-title">Subscribe Us</span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--Search Popup-->
+    <div id="search-popup" class="search-popup">
+        <div class="close-search theme-btn"><span class="flaticon-remove"></span></div>
+        <div class="popup-inner">
+            <div class="overlay-layer"></div>
+            <div class="search-form">
+                <form method="post" action="index.html">
+                    <div class="form-group">
+                        <fieldset>
+                            <input type="search" class="form-control" name="search-input" value="" placeholder="Search Here" required >
+                            <input type="submit" value="Search Now!" class="theme-btn">
+                        </fieldset>
+                    </div>
+                </form>
+                <br>
+                <h3>Recent Search Keywords</h3>
+                <ul class="recent-searches">
+                    <li><a href="contact-1.html#">Finance</a></li>
+                    <li><a href="contact-1.html#">Idea</a></li>
+                    <li><a href="contact-1.html#">Service</a></li>
+                    <li><a href="contact-1.html#">Growth</a></li>
+                    <li><a href="contact-1.html#">Plan</a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Page Title -->
+    <section class="page-title" style="background-image: url(http://st.ourhtmldemo.com/new/envolve/assets/images/background/bg-17.jpg);">
+        <div class="auto-container">
+            <div class="content-box">
+                <div class="content-wrapper">
+                    <div class="title">
+                        <h1>Get in touch</h1>
+                    </div>
+                    <ul class="bread-crumb clearfix">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contact-1.html#">Pages</a></li>
+                        <li>Contact 01</li>
+                    </ul>
+                </div>                    
+            </div>
+        </div>
+    </section>
+    <!-- Page Title -->
+
+    <!-- Contact Details Section -->
+    <section class="contact-details-section">
+        <div class="auto-container">
+            <div class="sec-title text-center">
+                <h2>We’d love to help you</h2>
+                <div class="text">Please feel free to get in touch  using the form below. We'd love to hear your <br> thoughts & answer any questions you may have!</div>
+                <div class="text-decoration">
+                    <span class="left"></span>
+                    <span class="right"></span>
+                </div>
+            </div>
+            <div class="row">
+                
+                <div class="col-lg-3 contact-info-block">
+                    <div class="inner-box">
+                        <div class="icon-box">
+                            <div class="icon"><img src="http://st.ourhtmldemo.com/new/envolve/assets/images/icons/icon-47.png" alt=""></div>
+                            <h5>24/7 service</h5>
+                            <h4>Call us on</h4>
+                        </div>                            
+                        <ul>
+                            <li><a href="tel:+17865236887">+1 786 523 6887</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 contact-info-block">
+                    <div class="inner-box">
+                        <div class="icon-box">
+                            <div class="icon"><img src="http://st.ourhtmldemo.com/new/envolve/assets/images/icons/icon-48.png" alt=""></div>
+                            <h5>Drop a line</h5>
+                            <h4>Mail us @</h4>
+                        </div>                            
+                        <ul>
+                            <li><a href="mailto:supportteam@Envolve.com">supportteam@Envolve.com</a></li>
+                            <li><a href="mailto:career@Envolve.com">career@Envolve.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>            
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="auto-container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="live-contact">
+                        <div class="image"><img src="http://st.ourhtmldemo.com/new/envolve/assets/images/resource/image-40.jpg" alt=""></div>
+                        <div class="content">
+                            <h4>Chat with a live</h4>
+                            <div class="text">
+                                Call or fill out the feedback form and we will contact you!</div>
+                            <div class="link-btn"><a href="contact-1.html#" class="theme-btn btn-style-one"><span class="btn-title">LIVE CHAT</span></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="sec-title">
+                        <h2>Get free consultation 30 min</h2>
+                        <div class="text-decoration">
+                            <span class="left"></span>
+                            <span class="right"></span>
+                        </div>
+                    </div>
+                    <form action="{% url 'applications' %}" method="POST" class="contact-form">
+                        <div class="row">
+                            {% csrf_token %}
+                            <div class="col-md-6 form-group">
+                                <input type="text" name="name" placeholder="First Name" required="">
+                            </div>
+                            
+                            <div class="col-md-6 form-group">
+                                <input type="email" name="mail" placeholder="Email Address" required="">
+                            </div>
+
+                            <div class="col-md-6 form-group">
+                                <input type="text" name="phone" placeholder="Phone" required="">
+                            </div>
+    
+                            <div class="col-md-12 form-group">
+                                <div class="row m-0 justify-content-between">
+                                    <button class="theme-btn btn-style-one mb-30" type="submit" name="submit-form"><span class="btn-title">SEND MESSAGE</span></button>
+                                </div>                                
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Main Footer -->
+    {% include 'footer.html' %}
+	
+</div>
+<!--End pagewrapper-->
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="flaticon-right-arrow"></span></div>
+
+</body>
+{% endblock %}
+

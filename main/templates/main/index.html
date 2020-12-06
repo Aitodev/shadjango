@@ -1,0 +1,1224 @@
+{% extends 'wrapper.html' %}
+{% load static %}
+{% block title %}ASTRA SOLUTIONS | MAIN{% endblock %}
+{% block content %}
+<body>
+
+<div class="page-wrapper">
+    <!-- Preloader -->
+    <div class="loader-wrap">
+        <div class="preloader"><div class="preloader-close">Preloader Close</div></div>
+        <div class="layer layer-one"><span class="overlay"></span></div>
+        <div class="layer layer-two"><span class="overlay"></span></div>        
+        <div class="layer layer-three"><span class="overlay"></span></div>        
+    </div>
+
+    <!-- Main Header -->
+    {% include 'header.html' %}
+
+    <!-- Hidden Sidebar -->
+    
+    
+    <!--Search Popup-->
+    <div id="search-popup" class="search-popup">
+        <div class="close-search theme-btn"><span class="flaticon-remove"></span></div>
+        <div class="popup-inner">
+            <div class="overlay-layer"></div>
+            <div class="search-form">
+                <form method="post" action="index.html">
+                    <div class="form-group">
+                        <fieldset>
+                            <input type="search" class="form-control" name="search-input" value="" placeholder="Search Here" required >
+                            <input type="submit" value="Search Now!" class="theme-btn">
+                        </fieldset>
+                    </div>
+                </form>
+                <br>
+                <h3>Recent Search Keywords</h3>
+                <ul class="recent-searches">
+                    <li><a href="index.html#">Finance</a></li>
+                    <li><a href="index.html#">Idea</a></li>
+                    <li><a href="index.html#">Service</a></li>
+                    <li><a href="index.html#">Growth</a></li>
+                    <li><a href="index.html#">Plan</a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Banner Section -->
+    <section class="banner-section style-one">
+		<div class="banner-carousel theme_carousel owl-theme owl-carousel" data-options='{"loop": true, "margin": 0, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 6000, "smartSpeed": 1000, "responsive":{ "0" :{ "items": "1" }, "768" :{ "items" : "1" } , "1000":{ "items" : "1" }}}'>
+			<!-- Slide Item -->
+			<div class="slide-item">
+				<div class="image-layer lazy-image" data-bg="url({% static 'images/background/1.jpg' %})"></div>
+
+				<div class="auto-container">
+                    <div class="content-box justify-content-end">
+                        <div>
+                            <h2>Open <br> new company</h2>
+                            <div class="btn-box">
+                                <a href="contact.html" class="theme-btn btn-style-two"><span class="btn-title">Contact Us</span></a>
+                            </div>
+                        </div>
+                    </div>    					
+				</div>
+			</div>
+
+			<!-- Slide Item -->
+			<div class="slide-item">
+				<div class="image-layer lazy-image" data-bg="url({% static 'images/background/2.jpg' %})"></div>
+
+				<div class="auto-container">
+					<div class="content-box text-center style-two">
+                        <div>
+                            <h2>Accounting services</h2>                            
+                            <div class="btn-box">
+                                <a href="contact.html" class="theme-btn btn-style-one"><span class="btn-title">Contact us</span></a>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+			</div>
+
+            <!-- Slide Item -->
+            <div class="slide-item">
+                <div class="image-layer lazy-image" data-bg="url({% static 'images/background/3.jpg' %})"></div>
+
+                <div class="auto-container">
+                    <div class="content-box">
+                        <div>
+                            <h2>Tax services</h2>
+                            <div class="btn-box">
+                                <a href="contact.html" class="theme-btn btn-style-two"><span class="btn-title">Contact Us</span></a>
+                            </div>
+                        </div>                            
+                    </div>
+                </div>
+            </div>
+
+		</div>
+    </section>
+    <!--End Banner Section -->
+
+    <!-- Clients Section -->
+    <section class="clients-section">
+        <div class="auto-container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <!--Sponsors Carousel-->
+                    <div class="theme_carousel owl-theme owl-carousel" data-options='{"loop": true, "margin": 40, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 6000, "smartSpeed": 300, "responsive":{ "0" :{ "items": "1" }, "600" :{ "items" : "2" }, "768" :{ "items" : "3" } , "992":{ "items" : "4" }, "1200":{ "items" : "4" }}}'>
+                        <div class="slide-item"><figure class="image-box"><a href="index.html#"><img src="{% static 'images/resource/client-1.png' %}" alt=""></a></figure></div>
+                        <div class="slide-item"><figure class="image-box"><a href="index.html#"><img src="{% static 'images/resource/client-2.png' %}" alt=""></a></figure></div>
+                        <div class="slide-item"><figure class="image-box"><a href="index.html#"><img src="{% static 'images/resource/client-3.png' %}" alt=""></a></figure></div>
+                        <div class="slide-item"><figure class="image-box"><a href="index.html#"><img src="{% static 'images/resource/client-4.png' %}" alt=""></a></figure></div>
+                        <div class="slide-item"><figure class="image-box"><a href="index.html#"><img src="{% static 'images/resource/client-1.png' %}" alt=""></a></figure></div>
+                        <div class="slide-item"><figure class="image-box"><a href="index.html#"><img src="{% static 'images/resource/client-2.png' %}" alt=""></a></figure></div>
+                        <div class="slide-item"><figure class="image-box"><a href="index.html#"><img src="{% static 'images/resource/client-3.png' %}" alt=""></a></figure></div>
+                        <div class="slide-item"><figure class="image-box"><a href="index.html#"><img src="{% static 'images/resource/client-4.png' %}" alt=""></a></figure></div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="link-btn text-right">
+                        <a href="index.html#" class="theme-btn btn-style-one"><span class="btn-title">Join With Us</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Pricing Section -->
+    <section class="pricing-section">
+        <div class="auto-container">
+            <div class="sec-title text-center">
+                <h2>Our registation <br> Servies</h2>
+                <div class="text-decoration">
+                    <span class="left"></span>
+                    <span class="right"></span>
+                </div>
+            </div>
+                   
+            <div class="pricing-content">
+                <!-- Tab panes -->
+                <div class="tab-content wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                    <div class="tab-pane fadeInUp animated active" id="price-tab-one" role="tabpanel" aria-labelledby="price-tab-one">
+                        <div class="wrapper-box">
+                            <div class="row m-0">
+                                <div class="col-lg-4 pricing-block animated fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                    <div class="inner-box">
+                                        <div class="top-content">
+                                            <div class="row m-0 justify-content-between">
+                                                <div class="category"  style="padding-left: 10%;">Open LLC <br> Limited Liability Company</div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="lower-content">
+                                            
+                                            <h4>An LLC keeps owners personal assets separate from those of the company. To protect your assets .  </h4>
+                                            <div class="link-btn"><a href="contact.html" class="theme-btn btn-style-two"><span class="btn-title">get started</span></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 pricing-block active animated fadeInLeft" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                    <div class="inner-box">
+                                        <div class="top-content">
+                                            <div class="row m-0 justify-content-between">
+                                                <div class="category" style="padding-left: 10%;">Open Inc <br>Corporation</div>
+                                            </div>
+                                        </div>
+                                        <div class="lower-content">
+                                            <h4>A corporation is a legal entity that is separate and distinct from its owners. Corporations enjoy most of the rights and responsibilities that individuals possess.</h4>
+                                            <div class="link-btn"><a href="contact.html" class="theme-btn btn-style-one"><span class="btn-title">Get Started</span></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 pricing-block animated fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                    <div class="inner-box">
+                                        <div class="top-content">
+                                            <div class="row m-0 justify-content-between">
+                                                <div class="category"  style="padding-left: 30%;">Open DBA <br>Fiction name</div>
+                                            </div>
+                                        </div>
+                                        <div class="lower-content">
+                                            <h4>A necessary option for bringing your business name to life if it operates under a name other than its legal name.</h4>
+                                            <div class="link-btn"><a href="contact.html" class="theme-btn btn-style-two"><span class="btn-title">Get Started</span></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fadeInUp animated" id="price-tab-two" role="tabpanel" aria-labelledby="price-tab-two">
+                        <h3>Switch to annual plan and get 25% offer.</h3>
+                        <div class="wrapper-box">
+                            <div class="row m-0">
+                                <div class="col-lg-4 pricing-block animated fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                    <div class="inner-box">
+                                        <div class="top-content">
+                                            <div class="row m-0 justify-content-between">
+                                                <div class="category">Basic Pack</div>
+                                                <div class="price"><span>$</span>24.00 <sub>/mo</sub></div>
+                                            </div>
+                                        </div>
+                                        <div class="lower-content">
+                                            <h5>Most Recommended</h5>
+                                            <h4>Power of choice is untrammelled and <br>do what we like best.</h4>
+                                            <ul>
+                                                <li>Planning: Budget, Estimated tax</li>
+                                                <li>Coaching: Training on specific areas to ensure a streamline accounting process</li>
+                                                <li>Business Structure: Defining a tax-effective structure that suits your business type</li>
+                                                <li>Planning: Budget, Estimated tax</li>
+                                            </ul>
+                                            <div class="link-btn"><a href="contact.html" class="theme-btn btn-style-two"><span class="btn-title">Get Started a Free Trail</span></a></div>
+                                            
+                                        </div>                                            
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 pricing-block active animated fadeInRight" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                    <div class="inner-box">
+                                        <div class="top-content">
+                                            <div class="row m-0 justify-content-between">
+                                                <div class="category">Standard Pack</div>
+                                                <div class="price"><span>$</span>45.00 <sub>/mo</sub></div>
+                                            </div>
+                                        </div>
+                                        <div class="lower-content">
+                                            <h5>for Large Business</h5>
+                                            <h4>Matters to  principle of selection our <br>pleasures to secure.</h4>
+                                            <ul>
+                                                <li><i class="flaticon-tick"></i>3-4 Weeks from to finish</li>
+                                                <li><i class="flaticon-tick"></i>Data sprint</li>
+                                                <li><span><i class="flaticon-right-arrow"></i>Results revision</span></li>
+                                                <li><i class="flaticon-tick"></i>30 Days of support</li>
+                                            </ul>
+                                            <div class="link-btn"><a href="contact.html" class="theme-btn btn-style-one"><span class="btn-title">Get Started a Free Trail</span></a></div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 pricing-block animated fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                    <div class="inner-box">
+                                        <div class="top-content">
+                                            <div class="row m-0 justify-content-between">
+                                                <div class="category">Advanced Pack</div>
+                                                <div class="price"><span>$</span>60.00 <sub>/mo</sub></div>
+                                            </div>
+                                        </div>
+                                        <div class="lower-content">
+                                            <h5>Most Recommended</h5>
+                                            <h4>These cases are perfectly simple <br>& easy to distinguish.</h4>
+                                            <ul>
+                                                <li><i class="flaticon-tick"></i>Planning: Budget, Estimated tax</li>
+                                                <li><i class="flaticon-tick"></i>Coaching: Training on specific areas to ensure a streamline accounting process</li>
+                                                <li><i class="flaticon-tick"></i>Business Structure: Defining a tax-effective structure that suits your business type</li>
+                                                <li><i class="flaticon-tick"></i>Planning: Budget, Estimated tax</li>
+                                            </ul>
+                                            <div class="link-btn"><a href="contact.html" class="theme-btn btn-style-two"><span class="btn-title">Get Started a Free Trail</span></a></div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                            
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Pricing Section -->
+    <section class="pricing-section">
+        <div class="auto-container">
+            <div class="sec-title text-center">
+                <h2>Our accounting <br> Servies</h2>
+                <div class="text-decoration">
+                    <span class="left"></span>
+                    <span class="right"></span>
+                </div>
+            </div>
+                   
+            <div class="pricing-content">
+                <!-- Tab panes -->
+                <div class="tab-content wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                    <div class="tab-pane fadeInUp animated active" id="price-tab-one" role="tabpanel" aria-labelledby="price-tab-one">
+                        <div class="wrapper-box">
+                            <div class="row m-0">
+                                <div class="col-lg-4 pricing-block animated fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                    <div class="inner-box">
+                                        <div class="top-content">
+                                            <div class="row m-0 justify-content-between">
+                                                <div class="category">Bookkeeping</div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="lower-content">
+                                            
+                                            <h4>A bookkeeping service offers a three-tiered approach to developing and maintaining your company’s overall financial processes and management.</h4>
+                                            <div class="link-btn"><a href="contact.html" class="theme-btn btn-style-two"><span class="btn-title">get started</span></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                 <div class="col-lg-4 pricing-block animated fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                    <div class="inner-box">
+                                        <div class="top-content">
+                                            <div class="row m-0 justify-content-between">
+                                                <div class="category" style="margin-left: 22%">Salestax</div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="lower-content">
+                                            
+                                            <h4>We'll calculate sales tax for every one of your business transactions based on jurisdiction laws and rules
+
+                                            </h4>
+                                            <div class="link-btn"><a href="contact.html" class="theme-btn btn-style-two"><span class="btn-title">get started</span></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 pricing-block active animated fadeInLeft" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                    <div class="inner-box">
+                                        <div class="top-content">
+                                            <div class="row m-0 justify-content-between">
+                                                <div class="category">Payroll</div>
+                                            </div>
+                                        </div>
+                                        <div class="lower-content">
+                                            <h4>payroll services make complex payroll tasks simple, we'll take care about all calculation and filing the reports</h4>
+                                            <div class="link-btn"><a href="contact.html" class="theme-btn btn-style-one"><span class="btn-title">Get Started</span></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fadeInUp animated" id="price-tab-two" role="tabpanel" aria-labelledby="price-tab-two">
+                        <h3>Switch to annual plan and get 25% offer.</h3>
+                        <div class="wrapper-box">
+                            <div class="row m-0">
+                                <div class="col-lg-4 pricing-block animated fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                    <div class="inner-box">
+                                        <div class="top-content">
+                                            <div class="row m-0 justify-content-between">
+                                                <div class="category">Basic Pack</div>
+                                                <div class="price"><span>$</span>24.00 <sub>/mo</sub></div>
+                                            </div>
+                                        </div>
+                                        <div class="lower-content">
+                                            <h5>Most Recommended</h5>
+                                            <h4>Power of choice is untrammelled and <br>do what we like best.</h4>
+                                            <ul>
+                                                <li>Planning: Budget, Estimated tax</li>
+                                                <li>Coaching: Training on specific areas to ensure a streamline accounting process</li>
+                                                <li>Business Structure: Defining a tax-effective structure that suits your business type</li>
+                                                <li>Planning: Budget, Estimated tax</li>
+                                            </ul>
+                                            <div class="link-btn"><a href="contact.html" class="theme-btn btn-style-two"><span class="btn-title">Get Started a Free Trail</span></a></div>
+                                            <div class="hint"><span>*</span> No credit card required</div>
+                                        </div>                                            
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 pricing-block active animated fadeInRight" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                    <div class="inner-box">
+                                        <div class="top-content">
+                                            <div class="row m-0 justify-content-between">
+                                                <div class="category">Standard Pack</div>
+                                                <div class="price"><span>$</span>45.00 <sub>/mo</sub></div>
+                                            </div>
+                                        </div>
+                                        <div class="lower-content">
+                                            <h5>for Large Business</h5>
+                                            <h4>Matters to  principle of selection our <br>pleasures to secure.</h4>
+                                            <ul>
+                                                <li><i class="flaticon-tick"></i>3-4 Weeks from to finish</li>
+                                                <li><i class="flaticon-tick"></i>Data sprint</li>
+                                                <li><span><i class="flaticon-right-arrow"></i>Results revision</span></li>
+                                                <li><i class="flaticon-tick"></i>30 Days of support</li>
+                                            </ul>
+                                            <div class="link-btn"><a href="contact.html" class="theme-btn btn-style-one"><span class="btn-title">Get Started a Free Trail</span></a></div>
+                                            <div class="hint"><span>*</span> No credit card required</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 pricing-block animated fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                    <div class="inner-box">
+                                        <div class="top-content">
+                                            <div class="row m-0 justify-content-between">
+                                                <div class="category">Advanced Pack</div>
+                                                <div class="price"><span>$</span>60.00 <sub>/mo</sub></div>
+                                            </div>
+                                        </div>
+                                        <div class="lower-content">
+                                            <h5>Most Recommended</h5>
+                                            <h4>These cases are perfectly simple <br>& easy to distinguish.</h4>
+                                            <ul>
+                                                <li><i class="flaticon-tick"></i>Planning: Budget, Estimated tax</li>
+                                                <li><i class="flaticon-tick"></i>Coaching: Training on specific areas to ensure a streamline accounting process</li>
+                                                <li><i class="flaticon-tick"></i>Business Structure: Defining a tax-effective structure that suits your business type</li>
+                                                <li><i class="flaticon-tick"></i>Planning: Budget, Estimated tax</li>
+                                            </ul>
+                                            <div class="link-btn"><a href="contact.html" class="theme-btn btn-style-two"><span class="btn-title">Get Started a Free Trail</span></a></div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                            
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Pricing Section -->
+    <section class="pricing-section">
+        <div class="auto-container">
+            <div class="sec-title text-center">
+                <h2>Tax service</h2>
+                <div class="text-decoration">
+                    <span class="left"></span>
+                    <span class="right"></span>
+                </div>
+            </div>
+                   
+            <div class="pricing-content" style="margin-left: 25%;">
+                <!-- Tab panes -->
+                <div class="tab-content wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                    <div class="tab-pane fadeInUp animated active" id="price-tab-one" role="tabpanel" aria-labelledby="price-tab-one">
+                        <div class="wrapper-box">
+                            <div class="row m-0">
+                                <div class="col-lg-4 pricing-block animated fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                    <div class="inner-box">
+                                        <div class="top-content">
+                                            <div class="row m-0 justify-content-between">
+                                                <div class="category"  style="padding-left: 10%;">Tax Return</div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="lower-content">
+                                            
+                                            <h4>Filing the tax reterns for business and personal </h4>
+                                            <div class="link-btn"><a href="contact.html" class="theme-btn btn-style-two"><span class="btn-title">get started</span></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 pricing-block active animated fadeInLeft" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                    <div class="inner-box">
+                                        <div class="top-content">
+                                            <div class="row m-0 justify-content-between">
+                                                <div class="category" style="padding-left: 10%;">Solving IRS tax problems</div>
+                                            </div>
+                                        </div>
+                                        <div class="lower-content">
+                                            <h4>We'll take care about IRS notis, to waive a penalties </h4>
+                                            <div class="link-btn"><a href="contact.html" class="theme-btn btn-style-one"><span class="btn-title">Get Started</span></a></div>
+                                        </div>  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fadeInUp animated" id="price-tab-two" role="tabpanel" aria-labelledby="price-tab-two">
+                        <h3>Switch to annual plan and get 25% offer.</h3>
+                        <div class="wrapper-box">
+                            <div class="row m-0">
+                                <div class="col-lg-4 pricing-block animated fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                    <div class="inner-box">
+                                        <div class="top-content">
+                                            <div class="row m-0 justify-content-between">
+                                                <div class="category">Basic Pack</div>
+                                                <div class="price"><span>$</span>24.00 <sub>/mo</sub></div>
+                                            </div>
+                                        </div>
+                                        <div class="lower-content">
+                                            <h5>Most Recommended</h5>
+                                            <h4>Power of choice is untrammelled and <br>do what we like best.</h4>
+                                            <ul>
+                                                <li>Planning: Budget, Estimated tax</li>
+                                                <li>Coaching: Training on specific areas to ensure a streamline accounting process</li>
+                                                <li>Business Structure: Defining a tax-effective structure that suits your business type</li>
+                                                <li>Planning: Budget, Estimated tax</li>
+                                            </ul>
+                                            <div class="link-btn"><a href="contact.html" class="theme-btn btn-style-two"><span class="btn-title">Get Started a Free Trail</span></a></div>
+                                            
+                                        </div>                                            
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 pricing-block active animated fadeInRight" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                    <div class="inner-box">
+                                        <div class="top-content">
+                                            <div class="row m-0 justify-content-between">
+                                                <div class="category">Standard Pack</div>
+                                                <div class="price"><span>$</span>45.00 <sub>/mo</sub></div>
+                                            </div>
+                                        </div>
+                                        <div class="lower-content">
+                                            <h5>for Large Business</h5>
+                                            <h4>Matters to  principle of selection our <br>pleasures to secure.</h4>
+                                            <ul>
+                                                <li><i class="flaticon-tick"></i>3-4 Weeks from to finish</li>
+                                                <li><i class="flaticon-tick"></i>Data sprint</li>
+                                                <li><span><i class="flaticon-right-arrow"></i>Results revision</span></li>
+                                                <li><i class="flaticon-tick"></i>30 Days of support</li>
+                                            </ul>
+                                            <div class="link-btn"><a href="contact.html" class="theme-btn btn-style-one"><span class="btn-title">Get Started a Free Trail</span></a></div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 pricing-block animated fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                    <div class="inner-box">
+                                        <div class="top-content">
+                                            <div class="row m-0 justify-content-between">
+                                                <div class="category">Advanced Pack</div>
+                                                <div class="price"><span>$</span>60.00 <sub>/mo</sub></div>
+                                            </div>
+                                        </div>
+                                        <div class="lower-content">
+                                            <h5>Most Recommended</h5>
+                                            <h4>These cases are perfectly simple <br>& easy to distinguish.</h4>
+                                            <ul>
+                                                <li><i class="flaticon-tick"></i>Planning: Budget, Estimated tax</li>
+                                                <li><i class="flaticon-tick"></i>Coaching: Training on specific areas to ensure a streamline accounting process</li>
+                                                <li><i class="flaticon-tick"></i>Business Structure: Defining a tax-effective structure that suits your business type</li>
+                                                <li><i class="flaticon-tick"></i>Planning: Budget, Estimated tax</li>
+                                            </ul>
+                                            <div class="link-btn"><a href="contact.html" class="theme-btn btn-style-two"><span class="btn-title">Get Started a Free Trail</span></a></div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                            
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="auto-container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="image-block">
+                        <div class="image-one wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms"><div class="image-box"><img class="lazy-image owl-lazy" src="{% static 'images/background/image-5.jpg' %}" data-src="{% static 'images/background/image-5.jpg' %}" alt=""></div></div>
+                        <div class="image-two wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms"><div class="image-box"><img class="lazy-image owl-lazy" src="{% static 'images/background/image-4.jpg' %}" data-src="{% static 'images/background/image-4.jpg' %}" alt=""></div></div>
+                        <div class="logo"><img src="{% static 'images/icons/icon-12.png' %}" alt=""></div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="sec-title">
+                        <h2>Professional and <br> dedicated consulting services</h2>
+                        <div class="text-decoration">
+                            <span class="left"></span>
+                            <span class="right"></span>
+                        </div>
+                        <div class="text">If you just opened your businnes and you need information
+                            how it works, what will be the best solution about licenses, what are the first steps to start, how to receive payments from clients, and any other question we will help you. Maybe you already are doing business and you need an audit on how to increase the revenue we'll help you. 
+                            </div>
+                    </div>
+                    <div class="text-block">
+                        <h5>Industries Covered</h5>
+                        <h4>Focusing on what we do best</h4>
+                    </div>
+                    <div class="text-block">
+                        <h5>our expertise</h5>
+                        <h4>High level of knowledge </h4>
+                    </div>
+                    <div class="author-box">
+                        <div class="signature"><img src="{% static 'images/resource/signature.png' %}" alt=""></div>
+                        <div class="author-info">
+                            <h4>Franklin Sinatra</h4>
+                            <h5>Manager</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Funfacts Section -->
+    <section class="funfacts-section">
+        <div class="pattern" style="background-image: url({% static 'images/shape/pattern-2.png' %});"></div>
+        <div class="auto-container">
+            <!-- Fact Counter -->
+            <div class="fact-counter">
+                <div class="row">
+                    <!--Column-->
+                    <div class="column counter-column col-lg-4">
+                        <div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                            <div class="content">
+                                <div class="icon-box">
+                                    <div class="icon"><img src="{% static 'images/icons/icon-1.png' %}" alt=""></div>
+                                    <div class="counter-title">Projects <br>with 100% satisfaction</div>
+                                </div>                                    
+                                <div class="count-outer count-box">
+                                    <span class="count-text" data-speed="3000" data-stop="2.5">0</span><span>K</span>
+                                </div>
+                                <div class="text">Power of choices when nothing what we like best principle.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Column-->
+                    <div class="column counter-column col-lg-4">
+                        <div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                            <div class="content">
+                                <div class="icon-box">
+                                    <div class="icon"><img src="{% static 'images/icons/icon-2.png' %}" alt=""></div>
+                                    <div class="counter-title">Experienced & <br> Professional team</div>
+                                </div>                                    
+                                <div class="count-outer count-box">
+                                    <span class="count-text" data-speed="3000" data-stop="138">0</span><span>+</span>
+                                </div>
+                                <div class="text">Except to obtain some of advantages from it has any right to find.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Column-->
+                    <div class="column counter-column col-lg-4">
+                        <div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                            <div class="content">
+                                <div class="icon-box">
+                                    <div class="icon"><img src="{% static 'images/icons/icon-3.png' %}" alt=""></div>
+                                    <div class="counter-title">Revenue of <br>last financial year</div>
+                                </div>                                    
+                                <div class="count-outer count-box">
+                                    <span class="count-text" data-speed="3000" data-stop="9.8">0</span><span>%</span>
+                                </div>
+                                <div class="text">Complete account of the system and <br>expound actual teachings. </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose us -->
+    
+
+    <!-- Cases Section -->
+    
+    </section>
+    <section class="pricing-section">
+        <div class="auto-container">
+            <div class="sec-title text-center">
+                <h2>Flexible Plans for <br> Small to Fast-Growing Company</h2>
+                <div class="text-decoration">
+                    <span class="left"></span>
+                    <span class="right"></span>
+                </div>
+            </div>
+                       
+            <div class="pricing-content">
+                <!-- Tab panes -->
+                <div class="tab-content wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                    <div class="tab-pane fadeInUp animated active" id="price-tab-one" role="tabpanel" aria-labelledby="price-tab-one">
+                        <h3>Switch to annual plan and get 25% offer.</h3>
+                        <div class="wrapper-box">
+                            <div class="row m-0">
+                                <div class="col-lg-4 pricing-block animated fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                    <div class="inner-box">
+                                        <div class="top-content">
+                                            <div class="row m-0 justify-content-between">
+                                                <div class="category">Open a New company in FL <br> (LLC, Corporation) </div>
+                                                <div class="price"><span>$</span>300 <sub></sub></div>
+                                            </div>
+                                        </div>
+                                        <div class="lower-content">
+                                            <h5>Most Recommended</h5>
+                                            <h4>The Price includes all work and fees </h4>
+                                            <!-- <ul>
+                                                <li>The Price includes all work and fees </li>
+                                            </ul> -->
+                                            <div class="link-btn"><a href="index.html#" class="theme-btn btn-style-two"><span class="btn-title">Get Started</span></a></div>                                    
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 pricing-block active animated fadeInLeft" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                    <div class="inner-box">
+                                        <div class="top-content">
+                                            <div class="row m-0 justify-content-between">
+                                                <div class="category">Monthly bookkeeping + Sales tax </div>
+                                                <div class="price"><span>$</span>100<sub>/month</sub></div>
+                                            </div>
+                                        </div>
+                                        <div class="lower-content">
+                                            <h5>for Large Business</h5>
+                                            <h4>Bookkeeping includes financial reports <br>
+                                                Preparation and filing <br> Sales tax report in FL
+                                                </h4>
+                                            <!-- <ul>
+                                                <li>3-4 Weeks from to finish</li>
+                                                <li>Data sprint</li>
+                                                <li>Results revision</li>
+                                                <li>30 Days of support</li>
+                                            </ul> -->
+                                            <div class="link-btn"><a href="index.html#" class="theme-btn btn-style-one"><span class="btn-title">Get Started</span></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 pricing-block animated fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                    <div class="inner-box">
+                                        <div class="top-content">
+                                            <div class="row m-0 justify-content-between">
+                                                <div class="category">Payroll</div>
+                                                <div class="price"><span>$</span>70 <sub>/mo</sub></div>
+                                            </div>
+                                        </div>
+                                        <div class="lower-content">
+                                            <h5>Most Recommended</h5>
+                                            <h4>All payroll calculation plus filing all state and IRS reports</h4>
+                                            <!-- <ul>
+                                                <li>2 Weeks from to finish</li>
+                                                <li>Data sprint</li>
+                                                <li>Results revision</li>
+                                                <li>20 Days of support</li>
+                                            </ul> -->
+                                            <div class="link-btn"><a href="index.html#" class="theme-btn btn-style-two"><span class="btn-title">Get Started</span></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fadeInUp animated" id="price-tab-two" role="tabpanel" aria-labelledby="price-tab-two">
+                        <h3>Switch to annual plan and get 25% offer.</h3>
+                        <div class="wrapper-box">
+                            <div class="row m-0">
+                                <div class="col-lg-4 pricing-block animated fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                    <div class="inner-box">
+                                        <div class="top-content">
+                                            <div class="row m-0 justify-content-between">
+                                                <div class="category">Basic Pack</div>
+                                                <div class="price"><span>$</span>24.00 <sub>/mo</sub></div>
+                                            </div>
+                                        </div>
+                                        <div class="lower-content">
+                                            <h5>Most Recommended</h5>
+                                            <h4>Power of choice is untrammelled and <br>do what we like best.</h4>
+                                            <ul>
+                                                <li>4-5 Weeks from to finish</li>
+                                                <li>Data sprint</li>
+                                                <li>Results revision</li>
+                                                <li>20 Days of support</li>
+                                            </ul>
+                                            <div class="link-btn"><a href="index.html#" class="theme-btn btn-style-two"><span class="btn-title">Get Started a Free Trail</span></a></div>
+                                            <div class="hint"><span>*</span> No credit card required</div>
+                                        </div>                                            
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 pricing-block active animated fadeInRight" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                    <div class="inner-box">
+                                        <div class="top-content">
+                                            <div class="row m-0 justify-content-between">
+                                                <div class="category">Standard Pack</div>
+                                                <div class="price"><span>$</span>45.00 <sub>/mo</sub></div>
+                                            </div>
+                                        </div>
+                                        <div class="lower-content">
+                                            <h5>for Large Business</h5>
+                                            <h4>Matters to  principle of selection our <br>pleasures to secure.</h4>
+                                            <ul>
+                                                <li>3-4 Weeks from to finish</li>
+                                                <li>Data sprint</li>
+                                                <li>Results revision</li>
+                                                <li>30 Days of support</li>
+                                            </ul>
+                                            <div class="link-btn"><a href="index.html#" class="theme-btn btn-style-one"><span class="btn-title">Get Started a Free Trail</span></a></div>
+                                            <div class="hint"><span>*</span> No credit card required</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 pricing-block animated fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
+                                    <div class="inner-box">
+                                        <div class="top-content">
+                                            <div class="row m-0 justify-content-between">
+                                                <div class="category">Advanced Pack</div>
+                                                <div class="price"><span>$</span>60.00 <sub>/mo</sub></div>
+                                            </div>
+                                        </div>
+                                        <div class="lower-content">
+                                            <h5>Most Recommended</h5>
+                                            <h4>These cases are perfectly simple <br>& easy to distinguish.</h4>
+                                            <ul>
+                                            <li>2 Weeks from to finish</li>
+                                            <li>Data sprint</li>
+                                            <li>Results revision</li>
+                                            <li>20 Days of support</li>
+                                            </ul>
+                                            <div class="link-btn"><a href="index.html#" class="theme-btn btn-style-two"><span class="btn-title">Get Started a Free Trail</span></a></div>
+                                            <div class="hint"><span>*</span> No credit card required</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                            
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--  Process Section -->
+    <section class="process-section">
+        <div class="pattern" style="background-image: url({% static 'images/shape/pattern-5.png' %});"></div>
+        <div class="auto-container">
+            <div class="sec-top row m-0 justify-content-md-between">
+                <div class="sec-title">
+                    <h2>Our Basic Work Process</h2>
+                    <div class="text-decoration">
+                        <span class="left"></span>
+                        <span class="right"></span>
+                    </div>
+                </div>
+                <div class="text">Which is the same as saying through shrinking from toil and pain <br>these perfectly simple and easy to distinguish.</div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 process-block-one">
+                    <div class="inner-box">
+                        <h5><span class="count">01.</span>Call to get a free consultation for the Best desicion</h5>
+                        <div class="icon"><img src="{% static 'images/icons/icon-4.png' %}" alt=""></div>
+                        <!-- <h4>Call to get free consultation for the Best desigion</h4>
+                        <div class="text">Choice is untrammelled & when nothing <br> prevents our being best.</div> -->
+                    </div>
+                </div>
+                <div class="col-lg-4 process-block-one">
+                    <div class="inner-box">
+                        <h5><span class="count">02.</span>Sign the agreement online</h5>
+                        <div class="icon"><img src="{% static 'images/icons/icon-5.png' %}" alt=""></div>
+                        <!-- <h4>Signe the aggriment for our work online</h4>
+                        <div class="text">Choice is untrammelled & when nothing <br> prevents our being best.</div> -->
+                    </div>
+                </div>
+                <div class="col-lg-4 process-block-one">
+                    <div class="inner-box">
+                        <h5><span class="count">03.</span>Get the our servies to improve your revenue</h5>
+                        <div class="icon"><img src="{% static 'images/icons/icon-6.png' %}" alt=""></div>
+                        <!-- <h4>Get the our servies to improve your revenues </h4>
+                        <div class="text">Choice is untrammelled & when nothing <br> prevents our being best.</div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <!-- <section class="testimonial-section">
+        <div class="auto-container">
+            <div class="testimonial-outer">
+                <div class="testimonial-carousel">
+                    <div class="row m-0">
+                        <div class="col-xl-6 p-0">
+                            <div class="swiper-container testimonial-thumbs">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="author-thumb"><img src="assets/images/resource/image-6.jpg" alt=""></div>
+                                        <div class="logo"><img src="assets/images/resource/client-5.png" alt=""></div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="author-thumb"><img src="assets/images/resource/image-7.jpg" alt=""></div>
+                                        <div class="logo"><img src="assets/images/resource/client-6.png" alt=""></div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="author-thumb"><img src="assets/images/resource/image-6.jpg" alt=""></div>
+                                        <div class="logo"><img src="assets/images/resource/client-5.png" alt=""></div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="author-thumb"><img src="assets/images/resource/image-7.jpg" alt=""></div>
+                                        <div class="logo"><img src="assets/images/resource/client-6.png" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 p-0">
+                            <div class="swiper-container testimonial-content wow fadeInUp" data-wow-delay="300ms" style="background-image: url(assets/images/background/bg-2.jpg);">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-block">
+                                            <div class="inner-box">
+                                                <div class="icon"><span class="flaticon-blog"></span></div>
+                                                <h4>Best Service Ever, We <br>Highly Recommend!</h4>
+                                                <div class="text">Envolve’s analytics Team have done an <br>excellent job presenting the analysis and <br>insights. We are confident that they have <br>helped move our business. Congarts for <br>their future projects.</div>
+                                                <div class="rating">
+                                                    <span class="flaticon-star"></span>
+                                                    <span class="flaticon-star"></span>
+                                                    <span class="flaticon-star"></span>
+                                                    <span class="flaticon-star"></span>
+                                                    <span class="flaticon-star"></span>
+                                                </div>
+                                                <div class="author-title">Boris Elbert, <span class="designation">Developer Blue Soft.</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-block">
+                                            <div class="inner-box">
+                                                <div class="icon"><span class="flaticon-blog"></span></div>
+                                                <h4>Best Service Ever, We <br>Highly Recommend!</h4>
+                                                <div class="text">Envolve’s analytics Team have done an <br>excellent job presenting the analysis and <br>insights. We are confident that they have <br>helped move our business. Congarts for <br>their future projects.</div>
+                                                <div class="rating">
+                                                    <span class="flaticon-star"></span>
+                                                    <span class="flaticon-star"></span>
+                                                    <span class="flaticon-star"></span>
+                                                    <span class="flaticon-star"></span>
+                                                    <span class="flaticon-star"></span>
+                                                </div>
+                                                <div class="author-title">Boris Elbert, <span class="designation">Developer Blue Soft.</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-block">
+                                            <div class="inner-box">
+                                                <div class="icon"><span class="flaticon-blog"></span></div>
+                                                <h4>Best Service Ever, We <br>Highly Recommend!</h4>
+                                                <div class="text">Envolve’s analytics Team have done an <br>excellent job presenting the analysis and <br>insights. We are confident that they have <br>helped move our business. Congarts for <br>their future projects.</div>
+                                                <div class="rating">
+                                                    <span class="flaticon-star"></span>
+                                                    <span class="flaticon-star"></span>
+                                                    <span class="flaticon-star"></span>
+                                                    <span class="flaticon-star"></span>
+                                                    <span class="flaticon-star"></span>
+                                                </div>
+                                                <div class="author-title">Boris Elbert, <span class="designation">Developer Blue Soft.</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-block">
+                                            <div class="inner-box">
+                                                <div class="icon"><span class="flaticon-blog"></span></div>
+                                                <h4>Best Service Ever, We <br>Highly Recommend!</h4>
+                                                <div class="text">Envolve’s analytics Team have done an <br>excellent job presenting the analysis and <br>insights. We are confident that they have <br>helped move our business. Congarts for <br>their future projects.</div>
+                                                <div class="rating">
+                                                    <span class="flaticon-star"></span>
+                                                    <span class="flaticon-star"></span>
+                                                    <span class="flaticon-star"></span>
+                                                    <span class="flaticon-star"></span>
+                                                    <span class="flaticon-star"></span>
+                                                </div>
+                                                <div class="author-title">Boris Elbert, <span class="designation">Developer Blue Soft.</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-nav-button">
+                                    <div class="swiper-button-next"><i class="fas fa-chevron-right"></i></div>
+                                    <div class="swiper-button-prev"><i class="fas fa-chevron-right"></i></div>
+                                </div>                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    
+
+    <!-- <section class="news-section">
+        <div class="wrapper-box">
+            <div class="left-column" style="background-image: url(assets/images/background/bg-3.jpg);">
+                <div class="outer-box">
+                    <div class="sec-title light">
+                        <a href="" name='contact-form'><h2>Don’t miss anything <br> keep update</h2></a>
+                        <div class="text-decoration">
+                            <span class="left"></span>
+                            <span class="right"></span>
+                        </div>
+                    </div>
+                    <h4>Be the first to receive</h4>
+                    <ul>
+                        <li><i class="fa fa-star"></i>Consultants advice & suggestions</li>
+                        <li><i class="fa fa-star"></i>Exclusive offers & discounts</li>
+                    </ul>
+                    <form action="index.html#" name="form">
+                        <div class="form-group">
+                            <i class="flaticon-mail"></i>
+                            <a href=""><input type="email" placeholder="Enter your email..."></a>
+                        </div>
+                        <button type="submit" class="theme-btn btn-style-two"><span class="btn-title">Subscribe Us</span></button>
+                    </form>                    
+                </div>
+            </div>
+            <div class="right-column">
+                <div class="outer-box">
+                    <div class="outer-container">
+                        <div class="row m-0 justify-content-between align-items-end">
+                            <div class="sec-title">
+                                <h2>Don’t miss anything <br> keep update</h2>
+                                <div class="text-decoration">
+                                    <span class="left"></span>
+                                    <span class="right"></span>
+                                </div>
+                            </div>
+                            <div class="swiper-nav-button">
+                                <div class="swiper-button-prev"><i class="flaticon-right-arrow"></i></div>
+                                <div class="swiper-button-next"><i class="flaticon-right-arrow"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-carousel-wrapper">
+                        <div class="swiper-container news-carousel">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="news-block-one">
+                                        <div class="inner-box">
+                                            <div class="row m-0 justify-content-between">
+                                                <div class="date"><strong>14</strong>February <br>2020</div>
+                                                <div class="author"><div class="title">Brendan Duke </div><img src="assets/images/resource/author-thumb-1.jpg" alt=""></div>
+                                            </div>
+                                            <div class="category">Business</div>
+                                            <h4><a href="blog-details.html">How to Manage Business’s <br>Online Reputation</a></h4>
+                                            <div class="read-more-btn"><a href="blog-details.html">Continue reading <i>>></i></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="news-block-one">
+                                        <div class="inner-box">
+                                            <div class="row m-0 justify-content-between">
+                                                <div class="date"><strong>21</strong>January <br>2020</div>
+                                                <div class="author"><div class="title">Raana irave </div><img src="assets/images/resource/author-thumb-2.jpg" alt=""></div>
+                                            </div>
+                                            <div class="category">Projects</div>
+                                            <h4><a href="blog-details.html">Is Your Business Ready For <br>Integration?</a></h4>
+                                            <div class="read-more-btn"><a href="blog-details.html">Continue reading <i>>></i></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="news-block-one">
+                                        <div class="inner-box">
+                                            <div class="row m-0 justify-content-between">
+                                                <div class="date"><strong>08</strong>January <br>2020</div>
+                                                <div class="author"><div class="title">Raana irave </div><img src="assets/images/resource/author-thumb-3.jpg" alt=""></div>
+                                            </div>
+                                            <div class="category">Marketing</div>
+                                            <h4><a href="blog-details.html">That Should You Include In <br>Your Marketing Plan</a></h4>
+                                            <div class="read-more-btn"><a href="blog-details.html">Continue reading <i>>></i></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="news-block-one">
+                                        <div class="inner-box">
+                                            <div class="row m-0 justify-content-between">
+                                                <div class="date"><strong>14</strong>February <br>2020</div>
+                                                <div class="author"><div class="title">Brendan Duke </div><img src="assets/images/resource/author-thumb-1.jpg" alt=""></div>
+                                            </div>
+                                            <div class="category">Business</div>
+                                            <h4><a href="blog-details.html">How to Manage Business’s <br>Online Reputation</a></h4>
+                                            <div class="read-more-btn"><a href="blog-details.html">Continue reading <i>>></i></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="news-block-one">
+                                        <div class="inner-box">
+                                            <div class="row m-0 justify-content-between">
+                                                <div class="date"><strong>21</strong>January <br>2020</div>
+                                                <div class="author"><div class="title">Raana irave </div><img src="assets/images/resource/author-thumb-2.jpg" alt=""></div>
+                                            </div>
+                                            <div class="category">Projects</div>
+                                            <h4><a href="blog-details.html">Is Your Business Ready For <br>Integration?</a></h4>
+                                            <div class="read-more-btn"><a href="blog-details.html">Continue reading <i>>></i></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="news-block-one">
+                                        <div class="inner-box">
+                                            <div class="row m-0 justify-content-between">
+                                                <div class="date"><strong>08</strong>January <br>2020</div>
+                                                <div class="author"><div class="title">Raana irave </div><img src="assets/images/resource/author-thumb-3.jpg" alt=""></div>
+                                            </div>
+                                            <div class="category">Marketing</div>
+                                            <h4><a href="blog-details.html">That Should You Include In <br>Your Marketing Plan</a></h4>
+                                            <div class="read-more-btn"><a href="blog-details.html">Continue reading <i>>></i></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>                                          
+                </div>                    
+            </div>
+        </div>
+    </section>-->
+
+
+
+    <!-- Features Section -->
+    <!-- <section class="features-section" style="margin-top: 10px; display: block; left: 10px;">
+        <div class="auto-container">
+            <div class="sec-title text-center">
+                <h2>Developing leaders & <br> High-performance creative teams</h2>
+                <div class="text-decoration">
+                    <span class="left"></span>
+                    <span class="right"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 feature-block-one wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <div class="image">
+                            <div class="icon"><span class="flaticon-career"></span></div>
+                            <img class="lazy-image owl-lazy" src="assets/images/resource/image-spacer-for-validation.png" data-src="assets/images/resource/image-1.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h5>Explore</h5>
+                            <h4>Our Company History</h4>
+                        </div>
+                        <div class="overlay">
+                            <div class="content">
+                                <h5>Explore</h5>
+                                <h4>Our Company History</h4>
+                            </div>
+                            <div class="text" style="background-image: url(assets/images/resource/image-1.jpg);">
+                                <p>In a free hour when our power choices when proveprevents best all easy to distinguish.</p>
+                                <div class="link-btn"><a href="index.html#"><i class="flaticon-right-arrow"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <div class="bottom-content text-center">
+                <div class="text">We help take your small business to the next level. Don’t hesitate to contact us.</div>
+                <h3>30 Minutes Free Consultation</h3>
+                <div class="link-btn"><a href="contact.html" class="theme-btn btn-style-two"><span class="btn-title">Send request</span></a></div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Map Section -->
+    
+    <!-- CTA Section -->
+    <section class="cta-section pb-0">
+<!--         <div class="auto-container">
+            <div class="row">
+                <div class="col-lg-5 image-column">
+                    <div class="image">
+                        <img src="assets/images/resource/image-2.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-7 content-column">
+                    <div class="sec-title text-center">
+                        <h2>Any time, any where consulting!..</h2>
+                        <div class="text">Foresee the pain and trouble that are bound to ensue; and equal blame <br>which is the same as saying through shrinking.</div>
+                        <div class="text-decoration">
+                            <span class="left"></span>
+                            <span class="right"></span>
+                        </div>
+                    </div>
+                    <div class="image"><img src="assets/images/resource/mockup-1.png" alt=""></div>
+                    <div class="bottom-content text-center">
+                        <div class="link-btn">
+                            <a href="index.html#" class="theme-btn btn-style-two"><span class="btn-title"><i class="flaticon-playstore"></i>Google Play</span></a>
+                            <a href="index.html#" class="theme-btn btn-style-one"><span class="btn-title"><i class="flaticon-app"></i>Apple Store</span></a>
+                        </div>
+                        <div class="hint">Privacy policy, Terms & conditions</div>
+                    </div>                        
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Feature Section Two -->
+    <section class="feature-section-two">
+        <div class="auto-container">
+            <div class="row">
+                <div class="col-lg-6 feature-block-two">
+                    <div class="shape-box">
+                        <div class="inner-box">
+                            <div class="icon"><img src="{% static 'images/icons/icon-9.png' %}" alt=""></div>
+                            <h4>Become a Partner of Envolve</h4>
+                            <div class="text">To take a trivial example, which of us undertakes <br>laborious physical exercise.</div>
+                        </div>
+                    </div>
+                        
+                </div>
+                <div class="col-lg-6 feature-block-two">
+                    <div class="shape-box">
+                        <div class="inner-box">
+                            <div class="icon"><img src="{% static 'images/icons/icon-10.png' %}" alt=""></div>
+                            <div class="text">Who chooses to enjoy a pleasure that has no one <br>annoying consequences.</div>
+                        </div>
+                    </div>               
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include 'footer.html' %}
+	
+</div>
+<!--End pagewrapper-->
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target="html"><i class="fas fa-chevron-up" style="transform: rotate(90deg);"></i></div>
+
+
+
+</body>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
