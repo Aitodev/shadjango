@@ -9,8 +9,10 @@ bot = telebot.TeleBot("1452235806:AAHnKq6WKiGaMb5Y-6bgH17WrEaJSJ7ULFM")
 def index(request):
     return render(request, 'main/index.html')
 
+
 def contact(request):
     return render(request, 'main/contact.html')
+
 
 class ApplicationsView(View):
     def post(self, request):
