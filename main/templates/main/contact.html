@@ -148,7 +148,7 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="live-contact">
-                        <div class="image"><img src="http://st.ourhtmldemo.com/new/envolve/assets/images/resource/image-40.jpg" alt=""></div>
+                        <div class="image"><img src="{% static 'images/baner.svg' %}" alt=""></div>
                         <div class="content">
                             <h4>Chat with a live</h4>
                             <div class="text">
@@ -178,6 +178,11 @@
 
                             <div class="col-md-6 form-group">
                                 <input type="text" name="phone" placeholder="Phone" required="">
+                            </div>
+
+                            <div class="col-md-6 form-group">
+                                <textarea name="comment" id="" cols="30" rows="10" placeholder="Question"></textarea>
+                                <!-- < type="text" name="comment" placeholder="Question" required=""> -->
                             </div>
     
                             <div class="col-md-12 form-group">

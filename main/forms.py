@@ -6,4 +6,4 @@ from django.db import models
 class ApplicationsForm(forms.ModelForm):
     class Meta:
         model = Applications
-        fields = ['mail', 'name', 'phone']
+        fields = ['mail', 'name', 'phone', 'comment']
