@@ -7,7 +7,7 @@ SECRET_KEY = 'e#d%*bd#xm4vs!s5vcr$%(8t^%oo%dlpx7u*xb*8weo)zrq42a'
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['aitodeveloper.pythonanywhere.com']
 
 
 INSTALLED_APPS = [
